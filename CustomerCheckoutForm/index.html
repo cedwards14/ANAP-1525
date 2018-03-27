@@ -76,21 +76,21 @@
                                                 <th>$49.99</th>
                                                 <th><input type="number" class="form-control"></th>
                                                 <th>1000</th>
-                                                <th><button class="btn">Remove</button></th>
+                                                <th><button class="btn" style="background-color: red; color:white">Remove</button></th>
                                             </tr>
                                             <tr>
                                                 <th>Dummy Content</th>
                                                 <th>$49.99</th>
                                                 <th><input type="number" class="form-control"></th>
                                                 <th>1000</th>
-                                                <th><button class="btn">Remove</button></th>
+                                                <th><button class="btn" style="background-color: red; color:white">Remove</button></th>
                                             </tr>
                                             <tr>
                                                 <th>Dummy Content</th>
                                                 <th>$49.99</th>
                                                 <th><input type="number" class="form-control"></th>
                                                 <th>1000</th>
-                                                <th><button class="btn">Remove</button></th>
+                                                <th><button class="btn" style="background-color: red; color:white">Remove</button></th>
                                             </tr>                                            
                                         </tbody>
                                     </table>
@@ -100,7 +100,7 @@
 
                         </div>
                         <div class="row mt-2 mr-3 d-flex justify-content-end">
-                            <button class="btn btn-primary" type="submit">Cart <i class="fas fa-chevron-right"></i></button>
+                            <span class="btn btn-primary" onclick="openTab(event, 'Cart')">Cart <i class="fas fa-chevron-right"></i></span>
                         </div>
                     </form>
 
@@ -108,61 +108,45 @@
                     
                 <div id="Cart" class="tabcontent">
                     <form>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <label>Description</label>
-
-                            </div>
-                            <div class="col-md-3">
-                                <label>Cost</label>
-
-                            </div>
-                            <div class="col-md-3">
-                                <label>Quantity</label>
-
-                            </div>
-                            <div class="col-md-3">
-                                <label>Remove</label>
-                            </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Description</th>
+                                        <th>Cost</th>
+                                        <th>Quantity</th>
+                                        <th>QOH</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Dummy Content</th>
+                                        <th>$49.99</th>
+                                        <th><input type="number" class="form-control"></th>
+                                        <th>1000</th>
+                                        <th><button class="btn" style="background-color: red; color:white">Remove</button></th>
+                                    </tr>
+                                    <tr>
+                                        <th>Dummy Content</th>
+                                        <th>$49.99</th>
+                                        <th><input type="number" class="form-control"></th>
+                                        <th>1000</th>
+                                        <th><button class="btn" style="background-color: red; color:white">Remove</button></th>
+                                    </tr>
+                                    <tr>
+                                        <th>Dummy Content</th>
+                                        <th>$49.99</th>
+                                        <th><input type="number" class="form-control"></th>
+                                        <th>1000</th>
+                                        <th><button class="btn" style="background-color: red; color:white">Remove</button></th>
+                                    </tr>                                            
+                                </tbody>
+                            </table>
                         </div>
-
-                        <div class="row">
-                            <div class="col-md-3">
-                                <p>Dummy Content</p>
-
-                            </div>
-                            <div class="col-md-3">
-                                <p>$11.99</p>
-
-                            </div>
-                            <div class="col-md-3">
-                                <input type="number" class="form-control">
-
-                            </div>
-                            <div class="col-md-3">
-                                <button>Remove</button>
-
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <p>Dummy Content</p>
-
-                            </div>
-                            <div class="col-md-3">
-                                <p>$8.99</p>
-
-                            </div>
-                            <div class="col-md-3">
-                                <input type="number" class="form-control">
-
-                            </div>
-                            <div class="col-md-3">
-                                <button>Remove</button>
-
-                            </div>
-
+                        <div class="row mt-2 mr-3 ml-3 d-flex justify-content-between">
+                            <span class="btn btn-primary" onclick="openTab(event, 'Cart')"> <i class="fas fa-chevron-left"></i> Items</span>
+                            <span class="btn btn-primary" onclick="openTab(event, 'Cart')">Checkout <i class="fas fa-chevron-right"></i></span>
                         </div>
                     </form>
                 </div>

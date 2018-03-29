@@ -37,7 +37,9 @@
 .nav-link-color{
     color:white;
 }
-
+nav a{
+    color:white;
+}
 
 .table>tfoot td, .table>tfoot th 
 {

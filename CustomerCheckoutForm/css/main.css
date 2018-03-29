@@ -39,6 +39,12 @@
 }
 
 
+.table>tfoot td, .table>tfoot th 
+{
+    border-top: none;
+}
+
+
 
 
 

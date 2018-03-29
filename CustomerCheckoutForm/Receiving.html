@@ -13,6 +13,40 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <style type="text/css">
+        	html
+        	{
+        		box-sizing: border-box;
+        	}
+        	*, *:before, *:after
+        	{
+        		box-sizing: inherit;
+        	}
+        	.container
+        	{
+        		width: 100%;
+        		margin: 0 auto;
+        	}
+        	.receiving-details
+        	{
+        		border: 1px solid black;
+        		width: 30%;
+        		list-style: none;
+        	}
+        	.button
+        	{
+        		background: blue;
+        		color: white;
+        		text-decoration: none;
+        		padding: 0.5em;
+        		border-radius: 2px;
+        	}
+        	.button:hover
+        	{
+        		color: maroon;
+        		text-decoration: underline;
+        	}
+        </style>
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -25,14 +59,14 @@
                 <p>Username</p>
             </header>
             <main>
-                <div class="input">
+                <div class="receiving-menu">
                     <p>Purchase order</p>
                     <form><input type="text"></form>
                     <p>description</p>
                     <form><input type="text"></form>
                     <p>supplier</p>
                     <form><input type="text"></form>
-                        <ul class="receiving-menu">
+                        <ul class="receiving-details">
                             <li><p>PID</p><form><input type="text"></form></li>
                             <li><p>SID</p><form><input type="text"></form></li>
                             <li><p>Description</p><form><input type="text"></form></li>
@@ -41,7 +75,7 @@
                             <li><p>D-type</p><form><input type="text"></form></li>
                             <li><form><input type="Submit" value="Submit"></form></li>
                         </ul>
-                    <a href="#" class="btn">Results</a>
+                    <a href="#" class="button">Results</a>
                 </div>
                 <!-- <div class="results">
                         <ul class="receiving-menu">

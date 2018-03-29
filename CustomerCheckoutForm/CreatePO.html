@@ -13,13 +13,38 @@
     <body class="bg-light" >
 
         <nav class="bg-dark navbar fixed-top d-flex justify-content-end control-strip mb-5">
-            <a class="mr-4" style="color:white" href="ShoppingCart.html">Shopping Cart</a>
-            <a class="mr-4" style="color:white" href="FinishedInventory.html">Finished Inventory Page</a>
-            <span class="nav-link-color">Logged in as: <a href="">Xander Cage</a></span>
+            <a class="mr-4" href="CreatePO.html">Create Purchase Order</a>            
+            <a class="mr-4" href="Receiving.html">Receiving</a>            
+            <a class="mr-4" href="ShoppingCart.html">Shopping Cart</a>
+            <a class="mr-4" href="FinishedInventory.html">Finished Inventory Page</a>
+            <span class="nav-link-color">Logged in as: <a style="color:cornflowerblue" href="">Xander Cage</a></span>
         </nav>
 
 
         <main role="main" class="mt-5">
+            <div class="container">
+            <section class="jumbotron text-center">
+                <h1 class="jumbotron-heading">Purchase Order</h1>
+            </section>
+            </div>
+            <div class="container mb-2">
+                <div class="row d-flex align-items-center">
+                    <label class="mr-2" for="">Suppliers</label>
+                    <select>
+                        <option>[Select A Supplier]</option>
+                        <option>Bangladeshi Slave Tailors</option>
+                        <option>Chinese Children Products</option>
+                    </select>
+                </div>
+                <div class="row  d-flex align-items-center">
+                    <label class="mr-2" for="">Products</label>
+                    <input></input>
+                    <button>Search</button>
+
+                </div>
+
+
+            </div>
 
         </main>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

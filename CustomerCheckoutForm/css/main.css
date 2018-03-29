@@ -1,3 +1,15 @@
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+
 
 /* Style the tab */
 .tab {
@@ -67,4 +79,95 @@ nav a{
 }
 .margin-random{
     margin: 20px;
+}
+
+/* styles for landing page */
+
+header h1
+{
+    text-align: center;
+    font-size: 60px;
+}
+header 
+{
+    width: 100%;
+}
+
+.horizontal-menu, .horizontal-menu ul 
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    background-color: #000;
+}
+
+.horizontal-menu:after 
+{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.horizontal-menu li 
+{
+   display: inline-block;
+}
+
+.horizontal-menu a
+{
+    padding: 14px 17px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.horizontal-menu a:hover
+{
+    background-color: #4479ce;
+}
+
+.horizontal-menu li:hover a
+{
+    color: #fff;
+}
+
+.horizontal-menu ul
+{
+    display: none;
+    background-color: #000;
+    position: absolute;
+}
+
+.horizontal-menu li:hover > ul
+{
+    display: block;
+
+}
+
+.horizontal-menu ul > li
+{
+    float: none;
+    position: relative;
+}
+.landing img
+{
+    width: 100%;
+    height: auto;
+}
+main
+{
+    margin-top: 30px;
+    width: 100%;
+}
+main h1
+{
+    font-size: 30px;
+    text-align: center;
+}
+col-1
+{
+    margin: 0;
+    width: 50%;
+    float: left;
 }

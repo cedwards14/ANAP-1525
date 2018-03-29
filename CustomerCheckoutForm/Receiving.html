@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Hip Huggers.inc</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <style type="text/css">
+        	html
+        	{
+        		box-sizing: border-box;
+        	}
+        	*, *:before, *:after
+        	{
+        		box-sizing: inherit;
+        	}
+            .clearfix:before,
+            .clearfix:after {
+            content: " "; /* 1 */
+            display: table; /* 2 */
+            }
+
+            .clearfix:after {
+            clear: both;
+            }
+        	.container
+        	{
+        		width: 100%;
+        		margin: 0 auto;
+        	}
+        	.receiving-details
+        	{
+        		border: 1px solid black;
+        		list-style: none;
+                height: 8em;
+        	}
+            .receiving-details li
+            {
+                float: left;
+            }
+            .receiving-details li < form
+            {
+                float: left;
+            }
+            .submit
+            {
+                float: left;
+                margin-left: 1em;
+            }
+        	.button
+        	{
+        		background: blue;
+        		color: white;
+        		text-decoration: none;
+        		padding: 0.5em;
+        		border-radius: 2px;
+                margin-top: 2em;
+        	}
+        	.button:hover
+        	{
+        		color: maroon;
+        		text-decoration: underline;
+        	}
+        </style>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <div class="container">
+            <header>
+                <p>Main Icon</p>
+                <p>Username</p>
+            </header>
+            <main>
+                <div class="receiving-menu">
+                    <p>Purchase order</p>
+                    <form><input type="text"></form>
+                    <a href="#" class="button">Search</a>
+                    <p>Purchase order</p>
+                    <form><input type="text"></form>
+                    <p>Supplier</p>
+                    <form><input type="text"></form>
+                    <p>Order Date</p>
+                    <form><input type="text"></form>
+                        <ul class="receiving-details">
+                            <li><p>PID</p><form><input type="text"></form></li>
+                            <li><p>SID</p><form><input type="text"></form></li>
+                            <li><p>Description</p><form><input type="text"></form></li>
+                            <li><p>Quantity</p><form><input type="text"></form></li>
+                            <li><p>Received</p><form><input type="text"></form></li>
+                            <li><p>Descrepency</p><form><input type="text"></form></li>
+                            <li><p>D-type</p><form><input type="text"></form></li>
+                            <li><form class="submit"><input type="Submit" value="Submit"></form></li>
+                        </ul>
+                    <p>Packing Slip</p>
+                    <form><input type="text"></form>
+                    <a href="#" class="button">Receive</a>
+                </div>
+                <!-- <div class="results">
+                        <ul class="receiving-menu">
+                            <li><p>ItemID</p><form><input type="text"></form></li>
+                            <li><p>Name</p><form><input type="text"></form></li>
+                            <li><p>Description</p><form><input type="text"></form></li>
+                            <li><p>Product Type</p><form><input type="text"></form></li>
+                            <li><p>Supplier Name</p><form><input type="text"></form></li>
+                            <li><p>Supplier Address</p><form><input type="text"></form></li>
+                            <li><form><input type="Submit" value="Submit"></form></li>
+                        </ul>
+                    <a href="#">Back</a>
+                </div> -->
+            </main>
+            <footer><p>&copy; All Rights Reserved</p></footer>
+        </div>
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>

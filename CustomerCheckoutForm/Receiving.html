@@ -32,6 +32,10 @@
         		width: 100%;
         		margin: 0 auto;
         	}
+            .packingslip-input p, .packingslip-input form, .packingslip-input a
+            {
+                width: 12.5rem;
+            }
         	.receiving-details
         	{
         		border: 1px solid black;
@@ -82,14 +86,15 @@
 
         <div class="container">
             <header>
-                <p>Main Icon</p>
-                <p>Username</p>
+                
             </header>
             <main>
                 <div class="receiving-menu">
-                    <p>Purchase order</p>
-                    <form><input type="text"></form>
-                    <a href="#" class="button">Search</a>
+                    <div class="packingslip-input">
+                        <p>Purchase order</p>
+                        <form><input type="text"></form>
+                        <a href="#" class="button">Search</a>
+                    </div>
                     <p>Purchase order</p>
                     <form><input type="text"></form>
                     <p>Supplier</p>
@@ -110,18 +115,6 @@
                     <form><input type="text"></form>
                     <a href="#" class="button">Receive</a>
                 </div>
-                <!-- <div class="results">
-                        <ul class="receiving-menu">
-                            <li><p>ItemID</p><form><input type="text"></form></li>
-                            <li><p>Name</p><form><input type="text"></form></li>
-                            <li><p>Description</p><form><input type="text"></form></li>
-                            <li><p>Product Type</p><form><input type="text"></form></li>
-                            <li><p>Supplier Name</p><form><input type="text"></form></li>
-                            <li><p>Supplier Address</p><form><input type="text"></form></li>
-                            <li><form><input type="Submit" value="Submit"></form></li>
-                        </ul>
-                    <a href="#">Back</a>
-                </div> -->
             </main>
             <footer><p>&copy; All Rights Reserved</p></footer>
         </div>

@@ -32,9 +32,19 @@
         		width: 100%;
         		margin: 0 auto;
         	}
-            .packingslip-input p, .packingslip-input form, .packingslip-input a
+            .packingslip-input
+            {
+                background-color: lightgrey;
+            }
+            .packingslip-input p, .packingslip-input form
             {
                 width: 12.5rem;
+            }
+            .packingslip-input a
+            {
+                position: relative;
+                top: -1.5em;
+                left: 12em;
             }
         	.receiving-details
         	{
@@ -52,8 +62,9 @@
             }
             .submit
             {
-                float: left;
                 margin-left: 1em;
+                position: relative;
+                top: 3.5em;
             }
         	.button
         	{
@@ -63,6 +74,9 @@
         		padding: 0.5em;
         		border-radius: 2px;
                 margin-top: 2em;
+                position: relative;
+                top: -1.5em;
+                left: 12em;
         	}
         	.button:hover
         	{
@@ -91,15 +105,15 @@
             <main>
                 <div class="receiving-menu">
                     <div class="packingslip-input">
-                        <p>Purchase order</p>
+                        <h2>Purchase order</h2>
                         <form><input type="text"></form>
                         <a href="#" class="button">Search</a>
                     </div>
-                    <p>Purchase order</p>
+                    <h2>Purchase order</h2>
                     <form><input type="text"></form>
-                    <p>Supplier</p>
+                    <h2>Supplier</h2>
                     <form><input type="text"></form>
-                    <p>Order Date</p>
+                    <h2>Order Date</h2>
                     <form><input type="text"></form>
                         <ul class="receiving-details">
                             <li><p>PID</p><form><input type="text"></form></li>
@@ -111,7 +125,7 @@
                             <li><p>D-type</p><form><input type="text"></form></li>
                             <li><form class="submit"><input type="Submit" value="Submit"></form></li>
                         </ul>
-                    <p>Packing Slip</p>
+                    <h2>Packing Slip</h2>
                     <form><input type="text"></form>
                     <a href="#" class="button">Receive</a>
                 </div>

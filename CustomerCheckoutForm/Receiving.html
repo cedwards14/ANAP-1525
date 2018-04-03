@@ -3,130 +3,98 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Hip Huggers.inc</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <style type="text/css">
-        	html
-        	{
-        		box-sizing: border-box;
-        	}
-        	*, *:before, *:after
-        	{
-        		box-sizing: inherit;
-        	}
-            .clearfix:before,
-            .clearfix:after {
-            content: " "; /* 1 */
-            display: table; /* 2 */
-            }
-
-            .clearfix:after {
-            clear: both;
-            }
-        	.container
-        	{
-        		width: 100%;
-        		margin: 0 auto;
-        	}
-        	.receiving-details
-        	{
-        		border: 1px solid black;
-        		list-style: none;
-                height: 8em;
-        	}
-            .receiving-details li
-            {
-                float: left;
-            }
-            .receiving-details li < form
-            {
-                float: left;
-            }
-            .submit
-            {
-                float: left;
-                margin-left: 1em;
-            }
-        	.button
-        	{
-        		background: blue;
-        		color: white;
-        		text-decoration: none;
-        		padding: 0.5em;
-        		border-radius: 2px;
-                margin-top: 2em;
-        	}
-        	.button:hover
-        	{
-        		color: maroon;
-        		text-decoration: underline;
-        	}
-        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body class="bg-light" >
-                <nav class="bg-dark navbar fixed-top d-flex justify-content-end control-strip mb-5">
+
+        <nav class="bg-dark navbar fixed-top d-flex justify-content-end control-strip mb-5">
             <a class="mr-4" href="CreatePO.html">Create Purchase Order</a>            
             <a class="mr-4" href="Receiving.html">Receiving</a>            
             <a class="mr-4" href="ShoppingCart.html">Shopping Cart</a>
             <a class="mr-4" href="FinishedInventory.html">Finished Inventory Page</a>
             <span class="nav-link-color">Logged in as: <a style="color:cornflowerblue" href="">Xander Cage</a></span>
         </nav>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
 
 
-        <div class="container">
-            <header>
-                <p>Main Icon</p>
-                <p>Username</p>
-            </header>
-            <main>
-                <div class="receiving-menu">
-                    <p>Purchase order</p>
-                    <form><input type="text"></form>
-                    <a href="#" class="button">Search</a>
-                    <p>Purchase order</p>
-                    <form><input type="text"></form>
-                    <p>Supplier</p>
-                    <form><input type="text"></form>
-                    <p>Order Date</p>
-                    <form><input type="text"></form>
-                        <ul class="receiving-details">
-                            <li><p>PID</p><form><input type="text"></form></li>
-                            <li><p>SID</p><form><input type="text"></form></li>
-                            <li><p>Description</p><form><input type="text"></form></li>
-                            <li><p>Quantity</p><form><input type="text"></form></li>
-                            <li><p>Received</p><form><input type="text"></form></li>
-                            <li><p>Descrepency</p><form><input type="text"></form></li>
-                            <li><p>D-type</p><form><input type="text"></form></li>
-                            <li><form class="submit"><input type="Submit" value="Submit"></form></li>
-                        </ul>
-                    <p>Packing Slip</p>
-                    <form><input type="text"></form>
-                    <a href="#" class="button">Receive</a>
+        <main role="main" class="mt-5">
+            <div class="container">
+            <section class="jumbotron text-center">
+                <h1 class="jumbotron-heading">Receiving</h1>
+            </section>
+            </div>
+            <div class="container mb-2">                
+                <div class="row  d-flex align-items-center">
+                    <label class="mr-2" for="">Purchase Orders</label>
+                    <input></input>
+                    <button class="btn btn-primary margin-random">Search</button>
+
                 </div>
-                <!-- <div class="results">
-                        <ul class="receiving-menu">
-                            <li><p>ItemID</p><form><input type="text"></form></li>
-                            <li><p>Name</p><form><input type="text"></form></li>
-                            <li><p>Description</p><form><input type="text"></form></li>
-                            <li><p>Product Type</p><form><input type="text"></form></li>
-                            <li><p>Supplier Name</p><form><input type="text"></form></li>
-                            <li><p>Supplier Address</p><form><input type="text"></form></li>
-                            <li><form><input type="Submit" value="Submit"></form></li>
-                        </ul>
-                    <a href="#">Back</a>
-                </div> -->
-            </main>
-            <footer><p>&copy; All Rights Reserved</p></footer>
+            </div>           
+            <div class="row">
+            <div class="col-md-1"></div>
+                <div class="col-md-2">
+                   <div class="row"><strong>Purchase Order:</strong><p>  T4D78</p></div>
+                   <div class="row"><strong>Supplier: </strong><p>Silver Stitches</p></div>
+                   <div class="row"><strong>Order Date: </strong><p> April 3, 2018</p></div>
+                </div>
+                <div class="col-md-7 box-border">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                 <tr>
+                                       <th>Product ID</th>
+                                       <th>Description</th>
+                                       <th>Quantity</th>
+                                       <th>Received</th>
+                                       <th>Descrepency</th>
+                                       <th>D-Comment</th>
+                                    <th></th>
+                                 </tr>
+                             </thead>
+                             <tbody>
+                                  <tr>
+                                    <th>421</th>
+                                    <th>Zippers</th>
+                                    <th>320</th>
+                                    <th><input></input></th>
+                                    <th><input></input></th>
+                                    <th><input></input></th>
+                                </tr>
+                                   <tr>
+                                    <th>999</th>
+                                    <th>Sparkles</th>
+                                    <th>500</th>
+                                    <th><input></input></th>
+                                    <th><input></input></th>
+                                    <th><input></input></th>
+                                </tr>
+                                <tr>
+                                    <th>621</th>
+                                    <th>Butterflies</th>
+                                    <th>250</th>
+                                    <th><input></input></th>
+                                    <th><input></input></th>
+                                    <th><input></input></th>
+                                </tr>                                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
         </div>
+        <div class="row">
+            <div class="col-md-9"></div>
+            <div class="col-md-3"><button class="btn btn-primary">Complete Purchase Order</button></div>
+            </div>
 
 
+        </main>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

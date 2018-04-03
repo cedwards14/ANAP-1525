@@ -9,8 +9,6 @@
 }
 
 
-
-
 /* Style the tab */
 .tab {
     overflow: hidden;
@@ -82,15 +80,20 @@ nav a{
 }
 
 /* styles for landing page */
-
-header h1
+.landing
+{
+    background-image: url(../img/large_0391351.jpg)!important;
+    background-size: auto;
+}
+.landing header h1
 {
     text-align: center;
     font-size: 60px;
 }
-header 
+.landing header 
 {
     width: 100%;
+    background-color: white;
 }
 
 .horizontal-menu, .horizontal-menu ul 
@@ -155,19 +158,46 @@ header
     width: 100%;
     height: auto;
 }
-main
+.landing main
 {
     margin-top: 30px;
-    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-main h1
+.landing main h1
 {
+    margin: 0 auto;
+    width: 400px;
     font-size: 30px;
     text-align: center;
 }
-col-1
+.logins
+{
+    width: 100%;
+    margin-top: 50px;
+}
+.col-1
 {
     margin: 0;
-    width: 50%;
+    max-width: 40% !important;
     float: left;
+    text-align: center;
+    font-size: 30px;
+    border: 3px solid #3D7BA5;
+    padding: 20px 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+.col-1:nth-child(2n)
+{
+    float: right;
+}
+.col-1 a
+{
+    color: black !important;
+    text-decoration: none;
+}
+.col-1 a:hover
+{
+    font-weight: bold;
 }

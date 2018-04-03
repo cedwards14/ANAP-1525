@@ -27,30 +27,36 @@
             .clearfix:after {
             clear: both;
             }
-        	.container
-        	{
-        		width: 100%;
-        		margin: 0 auto;
-        	}
-            .packingslip-input
+            h1  
             {
-                background-color: lightgrey;
+                text-align: center;
             }
-            .packingslip-input p, .packingslip-input form
+            .packingslip-input h2
             {
-                width: 12.5rem;
+                margin-left: 2rem;
+            }
+            .packingslip-input h2, .packingslip-input form
+            {
+                width: 12.5rem;  
+            }
+            .packingslip-input form
+            {
+                position: relative;
+                top: -2.5em;
+                left: 13.5em;
             }
             .packingslip-input a
             {
                 position: relative;
-                top: -1.5em;
-                left: 12em;
+                top: -3.5em;
+                left: 26em;
             }
         	.receiving-details
         	{
         		border: 1px solid black;
         		list-style: none;
                 height: 8em;
+                padding: 0;
         	}
             .receiving-details li
             {
@@ -82,7 +88,7 @@
         	{
         		color: maroon;
         		text-decoration: underline;
-        	}
+            }
         </style>
     </head>
     <body class="bg-light" >
@@ -96,12 +102,7 @@
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-
-
-        <div class="container">
-            <header>
-                
-            </header>
+            <h1>Receiving</h1>
             <main>
                 <div class="receiving-menu">
                     <div class="packingslip-input">
@@ -115,23 +116,23 @@
                     <form><input type="text"></form>
                     <h2>Order Date</h2>
                     <form><input type="text"></form>
-                        <ul class="receiving-details">
-                            <li><p>PID</p><form><input type="text"></form></li>
-                            <li><p>SID</p><form><input type="text"></form></li>
-                            <li><p>Description</p><form><input type="text"></form></li>
-                            <li><p>Quantity</p><form><input type="text"></form></li>
-                            <li><p>Received</p><form><input type="text"></form></li>
-                            <li><p>Descrepency</p><form><input type="text"></form></li>
-                            <li><p>D-type</p><form><input type="text"></form></li>
-                            <li><form class="submit"><input type="Submit" value="Submit"></form></li>
-                        </ul>
+                </div>
+                <ul class="receiving-details">
+                    <li><p>PID</p><form><input type="text"></form></li>
+                    <li><p>SID</p><form><input type="text"></form></li>
+                    <li><p>Description</p><form><input type="text"></form></li>
+                    <li><p>Quantity</p><form><input type="text"></form></li>
+                    <li><p>Received</p><form><input type="text"></form></li>
+                    <li><p>Descrepency</p><form><input type="text"></form></li>
+                    <li><p>D-type</p><form><input type="text"></form></li>
+                </ul>
+                <div class="finalize-input">
                     <h2>Packing Slip</h2>
                     <form><input type="text"></form>
                     <a href="#" class="button">Receive</a>
                 </div>
             </main>
             <footer><p>&copy; All Rights Reserved</p></footer>
-        </div>
 
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
